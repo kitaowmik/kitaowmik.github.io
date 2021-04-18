@@ -7,6 +7,7 @@ var img6;
 var img7;
 var img8;
 var img9;
+var img0;
 
 var initials ='ab'; // your initials
 var choice = '1'; // starting choice, so it is not empty
@@ -17,9 +18,8 @@ function preload() {
 // preload() runs once, it may make you wait
 //  img = loadImage('cat.jpg');  // cat.jpg needs to be next to this .js file
 // you can link to an image on your github account
-  //img = loadImage('https://dma-git.github.io/images/light.jpg');
   img1 = loadImage('https://kitaowmik.github.io/images/light.jpg');
-  img2 = loadImage('https://kitaowmik.github.io/images/movie1.gif');
+  img2 = loadImage('https://kitaowmik.github.io/images/paint1.gif');
   img3 = loadImage('https://kitaowmik.github.io/images/movie2.gif');
   img4 = loadImage('https://kitaowmik.github.io/images/movie3.gif');
   img5 = loadImage('https://kitaowmik.github.io/images/movie4.gif');
@@ -27,6 +27,7 @@ function preload() {
   img7 = loadImage('https://kitaowmik.github.io/images/movie6.gif');
   img8 = loadImage('https://kitaowmik.github.io/images/movie7.gif');
   img9 = loadImage('https://kitaowmik.github.io/images/movie8.gif');
+  img0 = loadImage('https://kitaowmik.github.io/images/paint2.gif');
 }
 
 function setup() {
@@ -94,9 +95,10 @@ function newkeyChoice(toolChoice) { //toolchoice is the key that was pressed
 
     image(img9,pmouseX,pmouseY);
   } else if (toolChoice == '0') {
-    stroke(0, 0);
+   /* stroke(0, 0);
     fill(random(255), random(255), random(255), random(255));
-    rect(mouseX, mouseY, 200, 150);
+    rect(mouseX, mouseY, 200, 150);*/
+    image(img0,pmouseX,pmouseY);
   } else if (toolChoice == 'g' || toolChoice == 'G') { // g places the image we pre-loaded
     image(img, mouseX, mouseY);
     
