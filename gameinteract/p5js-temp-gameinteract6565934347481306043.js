@@ -1,5 +1,5 @@
-var ballx = 150;
-var bally = 150;
+var ballx = 200;
+var bally = 200;
 var ballSize = 40;
 var score =0;
 var gameState= "L1";
@@ -13,6 +13,10 @@ img1 = loadImage('https://kitaowmik.github.io/images/background1.jpg');
 img2 = loadImage('https://kitaowmik.github.io/images/background2.jpg');
 img3 = loadImage('https://kitaowmik.github.io/images/background3.jpg');
 img4 = loadImage('https://kitaowmik.github.io/images/navi.png');
+/*img5 = loadImage('https://jenstudent.github.io/images/skeleton.png');
+img6 = loadImage('https://jenstudent.github.io/images/spider.png');
+img7 = loadImage('https://jenstudent.github.io/images/villager3.gif');
+img8 = loadImage('https://jenstudent.github.io/images/llama.gif');*/
 }
 
 
@@ -56,7 +60,7 @@ function levelOne(){
   }
   
   image(img4,ballx, bally, ballSize, ballSize);
- // line(ballx, bally, mouseX, mouseY);
+  line(ballx, bally, mouseX, mouseY);
   
 } // end level one
 
@@ -75,7 +79,7 @@ function levelTwo(){
 
   }
   
-
+//  line(ballx, bally, mouseX, mouseY);
   image(img4,ballx, bally, ballSize, ballSize);
 } // end level two
 
@@ -87,7 +91,7 @@ function levelThree(){
     ballx = random(width);
     bally= random(height);
     ballSize=ballSize -1;
-    score= score +2;
+    score= score +1;
   }
   if(score>15){
 // level 4
@@ -96,6 +100,6 @@ function levelThree(){
 
   }
   
-
+//  line(ballx, bally, mouseX, mouseY);
   image(img4, ballx, bally, ballSize, ballSize);
 } // end level three
