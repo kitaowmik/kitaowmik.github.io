@@ -15,7 +15,7 @@ img1 = loadImage('https://kitaowmik.github.io/images/background1.jpg');
 img2 = loadImage('https://kitaowmik.github.io/images/background2.jpg');
 img3 = loadImage('https://kitaowmik.github.io/images/background3.jpg');
 img4 = loadImage('https://kitaowmik.github.io/images/navi.png');
-img5 = loadImage('https://kitaowmik.github.io/images/background4.gif');
+//img5 = loadImage('https://kitaowmik.github.io/images/background4.jpg');
 }
 
 
@@ -37,8 +37,15 @@ function draw() {
   if (gameState=="L3"){
    levelThree(); 
   }
+  if (gameState=="L4"){
+   levelFour(); 
+  }
   
   text(("Score: " + score), width/2, 40);
+  
+  if (gameState == "END") {
+    levelEnd();
+  }
   
 
 }// end draw
@@ -99,7 +106,7 @@ function levelTwo(){
 } // end level two
 
 function levelThree(){
-    background(img3);
+  background(img3);
   text("Level 3", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
    ballx = ballx + random (-5,5);
@@ -125,11 +132,11 @@ function levelThree(){
 } // end level three
 
 function levelFour(){
-  background(img5);
+  background(165,201,173);
   text("Level 4", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
-   ballx = ballx + random (-5,5);
-   bally = bally - random (-5, 5);
+   ballx = ballx + random (-15,10);
+   bally = bally - random (-15, 5);
    if (bally < 0 || bally > 600 || ballx < 0 || ballx > 600) {
      ballx = random(width/2);
      bally = random(height/2);
@@ -146,20 +153,16 @@ function levelFour(){
    
   }
   
-
   image(img4, ballx, bally, ballSize, ballSize);
 }
 
-/*function mouseClicked() {
-  if (distToBall <ballSize/2){
-    ballx = random(width);
-    bally= random(height);
-    ballSize=ballSize -1;
-    score= score +2;
-  } else {
-    score= score -1
-  }
-}*/
+function levelEnd() {
+  background(172,209,242);
+  fill(255);
+  text('CONGRATS!',300, 300);
+  text('CONGRATS!',350, 350);
+}
+  
 
 
 
