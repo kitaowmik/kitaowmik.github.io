@@ -1,12 +1,13 @@
 var ballx = 150;
 var bally = 150;
-var ballSize = 40;
+var ballSize = 100;
 var score =0;
 var gameState= "L1";
 var img1;
 var img2;
 var img3;
 var img4;
+var img5;
 let particles = [];
 
 function preload() {
@@ -14,6 +15,7 @@ img1 = loadImage('https://kitaowmik.github.io/images/background1.jpg');
 img2 = loadImage('https://kitaowmik.github.io/images/background2.jpg');
 img3 = loadImage('https://kitaowmik.github.io/images/background3.jpg');
 img4 = loadImage('https://kitaowmik.github.io/images/navi.png');
+img5 = loadImage('https://kitaowmik.github.io/images/background4.gif');
 }
 
 
@@ -44,11 +46,12 @@ function draw() {
 
 function levelOne(){
   text("Level 1", width/2, height-20);
-  background(255);
+  background(img1);
 
 
-  var distToBall= dist(ballx, bally, mouseX, mouseY);
-  if (distToBall <ballSize/2){
+var distToBall= dist(ballx, bally, mouseX, mouseY);
+
+ if (distToBall <ballSize/2){
     ballx = random(width);
     bally= random(height);
     score= score +1;
@@ -60,8 +63,8 @@ function levelOne(){
   }
   
   image(img4,ballx, bally, ballSize, ballSize);
- // line(ballx, bally, mouseX, mouseY);
-    for (let i = 0; i < 5; i++) {
+  line(ballx, bally, mouseX, mouseY);
+/*    for (let i = 0; i < 5; i++) {
     let p = new Particle();
     particles.push(p);
   }
@@ -72,7 +75,7 @@ function levelOne(){
       // remove this particle
       particles.splice(i, 1);
     }
-  }
+  }*/
   
 } // end level one
 
@@ -99,6 +102,12 @@ function levelThree(){
     background(img3);
   text("Level 3", width/2, height-20);
   var distToBall= dist(ballx, bally, mouseX, mouseY);
+   ballx = ballx + random (-5,5);
+   bally = bally - random (-1, 0);
+   if (bally < 0 || bally > 600 || ballx < 0 || ballx > 600) {
+     ballx = 300;
+     bally = 300;
+   }
   if (distToBall <ballSize/2){
     ballx = random(width);
     bally= random(height);
@@ -107,27 +116,61 @@ function levelThree(){
   }
   if(score>15){
 // level 4
-//   gameState = "L4";
+   gameState = "L4";
    
-
   }
   
 
   image(img4, ballx, bally, ballSize, ballSize);
 } // end level three
 
-class Particle {
+function levelFour(){
+  background(img5);
+  text("Level 4", width/2, height-20);
+  var distToBall= dist(ballx, bally, mouseX, mouseY);
+   ballx = ballx + random (-5,5);
+   bally = bally - random (-5, 5);
+   if (bally < 0 || bally > 600 || ballx < 0 || ballx > 600) {
+     ballx = random(width/2);
+     bally = random(height/2);
+   }
+  if (distToBall <ballSize/2){
+    ballx = random(width);
+    bally= random(height);
+    ballSize=ballSize -1;
+    score= score +1;
+  }
+  if(score>20){
+// ending
+   gameState = "END";
+   
+  }
+  
+
+  image(img4, ballx, bally, ballSize, ballSize);
+}
+
+/*function mouseClicked() {
+  if (distToBall <ballSize/2){
+    ballx = random(width);
+    bally= random(height);
+    ballSize=ballSize -1;
+    score= score +2;
+  } else {
+    score= score -1
+  }
+}*/
+
+
+
+/*class Particle {
   constructor() {
-    this.x = 300;
-    this.y = 380;
+    this.x = ballx;
+    this.y = bally;
     this.vx = random(-1, 1);
     this.vy = random(-5, -1);
-    this.alpha = 255;
   }
 
-  finished() {
-    return this.alpha < 0;
-  }
 
   update() {
     this.x += this.vx;
@@ -136,9 +179,6 @@ class Particle {
   }
 
   show() {
-    noStroke();
-    //stroke(255);
-    fill(255, this.alpha);
-    ellipse(this.x, this.y, 16);
+    image(img4,ballx, bally, 16);
   }
-}
+}*/
