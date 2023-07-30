@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=PT+Sans&display=swap');
+
+body {
+  background-image: url("/assets/homebg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  font-family: 'PT Sans';
+}
+
+.navbar {
+  background-color: #89acb8;
+  padding: 1em;
+
+}
+
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: 180px auto;
+  justify-content:unset;
+
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  background: none;
+
+  height:auto;
+  width: 100%;
+  padding: 0;
+
+}
+
+ul {
+  display: flex;
+  list-style-type:none;
+
+
+}
+
+
+a{
+  color:#250000;
+  transition: color 0.4s;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1em;
+  text-align: right;
+
+}
+
+a:hover {
+    color: #e6c1c2;
+  font-weight: bold;
+}
+
+ul.primary-nav {
+  margin: 0;
+}
+
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: left;
+  margin-top: auto;
+}
+
+.scrollimg {
+  background-color: rgb(44, 22, 22);
+  overflow: auto;
+  white-space: nowrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.scrollimg img {
+  padding: 10px;
+  width: 40%;
+}
+
+.subhead{
+  text-align: center;
+  text-transform:uppercase;
+  font-family: 'Abril Fatface';
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #c85456;
+  letter-spacing: .1em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  line-height:1.3em;
+  color: #c85456;
+  margin-top:.3em;
+}
+
+.desc {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 80px;
+  padding-top: 10px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: #c85456;
+}
+
+.about{
+  margin-right: 20%;
+  float:right;
+  height:400px;
+  width:450px;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: #c85456;
+  background-color:
+
+}
+
+.icon-img{
+  display:block;
+  margin-left: 25%;
+  float: left;
+  margin-top: 10%;
+}
+
+.model-img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  float: top;
+
+}
+
+.hero-img{
+  display: block;
+  width: 8%;
+  opacity:.6;
+  border-radius: 50%;
+  margin-top: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.second-section{
+  font-size: 2.5em;
+  line-height:1.3em;
+  color: #e6c1c2;
+  margin-top:.1em;
+  background: #250000;
+  background: url(../assets/light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
