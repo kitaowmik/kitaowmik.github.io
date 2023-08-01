@@ -163,7 +163,17 @@ ul.primary-nav {
   
   }
 
-  .room-img{
+  .sprite-img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    float: top;
+  
+  }
+
+  .aqua-img{
     display:block;
     margin-left: auto;
     margin-right: auto;
