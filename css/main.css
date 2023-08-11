@@ -54,12 +54,21 @@ a:hover {
 
 .portfolio {
   position: relative;
-  top: 410px;
-  right: 1350px;
+  top: 48vh;
+  right: 46vi;
 }
 
 .contact {
   position: relative;
-  top: 600px;
-  right: 1050px;
+  top: 67vh;
+  right: 33vi;
+}
+
+@media (max-width: 600px) {
+  .links {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+  }
 }
