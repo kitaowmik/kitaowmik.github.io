@@ -13,6 +13,9 @@ body {
 
 
 .links{
+  height: auto;
+  width: 1200px;
+  margin: 0 auto;
   color:#5e4747;
   list-style-type: none;
   text-decoration: none;
@@ -45,8 +48,8 @@ a:hover {
 
 .about {
   position: relative;
-  top: 380px;
-  right: 800px;;
+  top: 45vh;
+  right: 25vi;;
 }
 
 .portfolio {
