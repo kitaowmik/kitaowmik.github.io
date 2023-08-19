@@ -2,27 +2,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;500&family=Rubik:wght@500;600&display=swap');
 
 
+
+
 body {
   background-image: url("/assets/homebg.png");
+  opacity: 0.6;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   font-family: 'Rubik';
 }
 
+.container {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto auto;
+  background-color: rgb(231, 197, 177);
+  opacity: 0.75;
+  box-shadow: 5px 5px 50px rgb(85, 14, 14);
+}
+
+.hello {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  padding-top: 10px;
+  margin-bottom: -20px;
+}
+
+p {
+  font-size: 21px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
 
 
 .links{
-  height: auto;
+  /* height: auto;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto; */
   color:#5e4747;
   list-style-type: none;
   text-decoration: none;
-  display: block;
-  padding: .2em;
-  font-size: 3em;
-  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-content: center;
+  padding: 1em;
+  font-size: 30px;
+
+  width: 100%;
+  margin: auto;
   opacity: 1;
   animation: fade 2s linear;
 
@@ -35,6 +72,7 @@ body {
 }
 
 a {
+  text-align: center;
   text-decoration: none;
   color: #6d211e;
   transition: color 0.5s;
@@ -46,7 +84,8 @@ a:hover {
 
 
 
-.about {
+
+/* .about {
   position: relative;
   top: 45vh;
   right: 25vi;;
@@ -62,7 +101,7 @@ a:hover {
   position: relative;
   top: 67vh;
   right: 33vi;
-}
+} */
 
 @media (max-width: 600px) {
   .links {
