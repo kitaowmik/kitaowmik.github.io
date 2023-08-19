@@ -33,12 +33,14 @@ body {
 
 h1 {
   font-size: 100px;
+  color:#571816;
   padding-top: 10px;
   margin-bottom: -20px;
 }
 
 p {
   font-size: 21px;
+  color:#571816;
   margin-right: 100px;
   margin-left: 100px;
 }
@@ -48,7 +50,7 @@ p {
   /* height: auto;
   width: 1200px;
   margin: 0 auto; */
-  color:#5e4747;
+  color:#6d211e;
   list-style-type: none;
   text-decoration: none;
   display: flex;
