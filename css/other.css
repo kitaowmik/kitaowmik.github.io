@@ -116,23 +116,12 @@ ul.primary-nav {
     color: #c85456;
   }
 
-.right-col {
-  
-}
-
-.abouthi {
-  margin-right: 9%;
-  margin-bottom: -10%;
-  margin-top: 5%;
-}
-
   
 .about{
   margin-right: 18%;
-  margin-top: 10%;
   float:right;
-  height: 700px;
-  width:750px;
+  height:400px;
+  width:550px;
   font-size: 1.5em;
   font-weight: lighter;
   color:#6d211e;
