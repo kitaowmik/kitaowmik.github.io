@@ -75,7 +75,7 @@ ul.primary-navi {
 }
 
 .container .heading{
-  position: sticky;
+  /* position: sticky; */
   padding-bottom: 10px;
 }
 
@@ -89,7 +89,11 @@ ul.primary-navi {
  
 }
 
-.heading h1:hover{
+h1 {
+  position: sticky;
+}
+
+h1:hover{
   color:#250000;
 }
 

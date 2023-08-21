@@ -69,7 +69,7 @@ ul.primary-nav {
   }
   
   .hero {
-    position: relative;
+    /* position: relative; */
     text-align: left;
     margin: auto;
   }
