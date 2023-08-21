@@ -8,6 +8,7 @@ body {
     background-size: cover;
     margin: 0;
     font-family: 'Rubik';
+    overflow: hidden;
     overflow-x: hidden;
   }
   
