@@ -69,8 +69,13 @@ ul.primary-nav {
   }
   
   .hero {
+    position: relative;
     text-align: left;
-    margin-top: auto;
+    margin: auto;
+  }
+
+  .about-col {
+    margin-top: 8dvh;
   }
   
   .scrollimg {
