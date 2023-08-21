@@ -212,20 +212,7 @@ ul.primary-nav {
     background-size: cover;
   }
 
-  html::-webkit-scrollbar {
-    width: 10px;
-  }
-   
-  html::-webkit-scrollbar-track {
-    background: #c85456;
-    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
-  }
-   
-  html::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: #6d211e;
-    border: 1px solid ;
-  }
+
 
   #scrollbar1::-webkit-scrollbar {
     width: 10px;
