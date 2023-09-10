@@ -3,7 +3,7 @@
 
 
 body {
-    background-color:rgb(231, 197, 177);
+    background-color:rgb(238, 210, 207);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -12,7 +12,7 @@ body {
   
 .navbar {
   position: fixed;
-  background-color: rgb(231, 197, 177);
+  background-color: rgb(238, 210, 207);
   padding: 0.01em;
   top:0;
   width: 100%;
@@ -30,7 +30,7 @@ body {
 .navbar nav {
   display: block;
   justify-content: space-between;
-  background: rgb(231, 197, 177);
+  background: rgb(238, 210, 207);
 
 
 
@@ -99,7 +99,7 @@ h1:hover{
 
 .flex-container{
   display:flex;
-  background-color:rgb(231, 197, 177);
+  background-image:linear-gradient(rgb(238, 210, 207),rgb(246, 225, 200));
 }
 
 .box {

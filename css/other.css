@@ -3,7 +3,7 @@
 
 
 body {
-    background-color:rgb(231, 197, 177);
+    background-image:linear-gradient(rgb(238, 210, 207),rgb(246, 225, 200));
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -91,8 +91,19 @@ ul.primary-nav {
     animation: fade 5s linear;
   }
 
-  .right-col {
-    
+  .contact-col {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+    background-color: rgb(231, 197, 177,0.2);
+    backdrop-filter: blur(7px);
+    box-shadow: 5px 5px 50px rgb(153, 63, 63);
+     
   }
   
   .scrollimg {
@@ -151,6 +162,20 @@ ul.primary-nav {
   font-weight: lighter;
   color:#6d211e;
   
+  }
+
+.contact{
+  
+  text-align: center;
+  margin: 30px;
+  margin-bottom: 10px;
+  line-height:1.2em;
+  margin-top:25%;
+    
+  font-size: 1.5em;
+  font-weight: lighter;
+  color:#6d211e;
+    
   }
 
 .icon-img{
