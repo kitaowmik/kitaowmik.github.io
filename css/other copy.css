@@ -8,13 +8,18 @@ body {
     background-size: cover;
     margin: 0;
     font-family: 'Rubik';
+    overflow: hidden;
     overflow-x: hidden;
   }
+
+.aboutcontain {
+  background-image: url("/assets/homebg.png");
+}
 
   
 .navbar {
   /* position: fixed; */
-  background-color: rgb(231, 197, 177,0.2);
+  background-color: rgb(231, 197, 177);
   padding: 1em;
   top:0;
   width: 100%;
@@ -72,8 +77,8 @@ ul.primary-nav {
   
   .hero {
     /* position: relative; */
-    text-align: center;
-    margin: auto auto;
+    text-align: left;
+    margin: auto;
   }
 
   .about-col {
@@ -85,14 +90,10 @@ ul.primary-nav {
     left: 0;
     right: 0;
     margin: auto auto;
-    background-color: rgb(231, 197, 177,0.2);
-    backdrop-filter: blur(7px);
-    box-shadow: 5px 5px 50px rgb(153, 63, 63);
+    background-color: rgb(231, 197, 177);
+    opacity: 0.75;
+    box-shadow: 5px 5px 50px rgb(85, 14, 14);
     animation: fade 5s linear;
-  }
-
-  .right-col {
-    
   }
   
   .scrollimg {
@@ -124,7 +125,7 @@ ul.primary-nav {
     font-size: 3em;
     line-height:1.2em;
     color: #c85456;
-    margin-top:.8em;
+    margin-top:.3em;
   }
   
   .desc {
@@ -140,13 +141,10 @@ ul.primary-nav {
 
   
 .about{
-  
-  text-align: center;
-  margin: 30px;
-  margin-bottom: 10px;
-  line-height:1.2em;
-  margin-top:1em;
-  
+  margin-right: 18%;
+  float:right;
+  height:400px;
+  width:550px;
   font-size: 1.5em;
   font-weight: lighter;
   color:#6d211e;
@@ -248,23 +246,6 @@ ul.primary-nav {
    background-clip: content-box;
     background-color: #6d211e;
 }
-/*added new scrollbar for vertical */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #6d211e; 
-  border-radius: 5px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #6d211e; 
-  border-radius: 10px;
-}
-
 
 .ignore-css{
     all:unset;
